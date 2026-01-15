@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
-    <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.png') }}">
+    <link rel="icon" href="{{ asset('assets/img/favicon.webp') }}">
+    <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.webp') }}">
     <meta charset="UTF-8">
     <title>Hasil Diagnosa - Cek My PC</title>
 

@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <title>Register - CekMyPC</title>
 
-<link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
-<link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.png') }}">
+<link rel="icon" href="{{ asset('assets/img/favicon.webp') }}">
+<link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.webp') }}">
 
 <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">

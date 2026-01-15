@@ -14,8 +14,8 @@
   <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 
-  <link rel="icon" href="{{ asset('assets/img/favicon.png') }}">
-  <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.png') }}">
+  <link rel="icon" href="{{ asset('assets/img/favicon.webp') }}">
+  <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.webp') }}">
 
   <style>
     body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
