@@ -218,7 +218,7 @@
                 <strong>Cek My PC</strong> siap membantu Anda menemukan solusi kerusakan komputer yang sulit terdeteksi dengan sistem diagnosis otomatis berbasis metode ilmiah yang dapat diakses kapan saja & di mana saja.
               </p>
               <div class="action-buttons">
-                <a href="{{ route('diagnosis') }}" class="btn btn-primary">
+                <a href="/diagnosis" class="btn btn-primary">
                   <i class="bi bi-search me-2"></i> Mulai Diagnosa
                 </a>
               </div>
