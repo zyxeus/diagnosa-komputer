@@ -2,7 +2,7 @@
   <div class="container footer-top text-center">
 
     <a href="{{ url('/') }}" class="logo d-inline-flex align-items-center justify-content-center mb-2">
-      <img src="/assets/img/logo.webp" alt="Logo" class="footer-logo">
+      <img src="/assets/img/logo.png" alt="Logo" class="footer-logo">
       <span class="sitename">Cek My PC</span>
     </a>
 
