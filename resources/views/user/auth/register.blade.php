@@ -33,25 +33,37 @@
 
             <input type="text" name="name" class="form-control mb-3" value="{{ old('name') }}" placeholder="Nama" required>
             <input type="email" name="email" class="form-control mb-3" value="{{ old('email') }}" placeholder="Email" required>
-            <input type="password"
-                name="password"
-                id="register_password"
-                class="form-control mb-3"
-                placeholder="Password"
-                required>
+            <div class="mb-3">
+                <div class="input-group">
+                    <input type="password"
+                        name="password"
+                        id="register_password"
+                        class="form-control"
+                        placeholder="Password"
+                        required>
 
-            <i class="fas fa-eye toggle-password"
-            onclick="toggleRegisterPassword('register_password', this)"></i>
+                    <span class="input-group-text toggle-password"
+                        onclick="toggleRegisterPassword('register_password', this)">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+            </div>
 
-            <input type="password"
-                name="password_confirmation"
-                id="register_password_confirm"
-                class="form-control mb-3"
-                placeholder="Ulangi Password"
-                required>
+            <div class="mb-3">
+                <div class="input-group">
+                    <input type="password"
+                        name="password_confirmation"
+                        id="register_password_confirm"
+                        class="form-control"
+                        placeholder="Ulangi Password"
+                        required>
 
-            <i class="fas fa-eye toggle-password"
-            onclick="toggleRegisterPassword('register_password_confirm', this)"></i>
+                    <span class="input-group-text toggle-password"
+                        onclick="toggleRegisterPassword('register_password_confirm', this)">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+            </div>
 
             <button class="btn btn-success w-100">Daftar</button>
 
