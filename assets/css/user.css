@@ -239,37 +239,6 @@ form button:hover {
     }
 }
 
-/* ===============================
-   FIX FINAL ICON MATA PASSWORD
-   =============================== */
-
-.password-field {
-    position: relative;
-    width: 100%;
-}
-
-.password-field .form-control {
-    height: 48px;               /* SAMAKAN DENGAN INPUT EMAIL */
-    padding-right: 44px;        /* ruang ikon */
-    line-height: 48px;
-}
-
-.password-toggle {
-    position: absolute;
-    top: 50%;
-    right: 14px;
-    transform: translateY(-50%);
-
-    cursor: pointer;
-    color: #6c757d;             /* WARNA LOGIN ADMIN */
-    font-size: 16px;
-
-    z-index: 20;
-}
-
-.password-toggle:hover {
-    color: #0d6efd;
-}
 
 
 

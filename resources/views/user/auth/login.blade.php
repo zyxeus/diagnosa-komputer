@@ -6,7 +6,6 @@
 <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.webp') }}">
 
 <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
 </head>
 
@@ -48,16 +47,16 @@
             <div class="mb-3">
                 <label>Password</label>
 
-                <div class="password-field">
+                <div class="input-group">
                     <input type="password"
                         name="password"
                         id="user_password"
                         class="form-control"
                         required>
 
-                    <i class="fas fa-eye password-toggle"
-                    id="userEyeIcon"
-                    onclick="toggleUserPassword()"></i>
+                    <span class="input-group-text toggle-password" onclick="toggleUserPassword()">
+                        <i class="fas fa-eye" id="userEyeIcon"></i>
+                    </span>
                 </div>
             </div>
 
