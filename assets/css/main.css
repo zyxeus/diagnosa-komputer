@@ -2717,3 +2717,39 @@ input[type="range"]::-moz-range-thumb {
     margin: 0 20px;
   }
 }
+
+.input-group-text.toggle-password {
+    background: transparent !important;
+    border: none !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    min-width: auto !important;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* icon mata */
+.input-group-text.toggle-password i {
+    color: #6c757d;   /* sama seperti admin */
+    font-size: 16px;
+    padding-right: 12px;
+}
+
+.input-group-text.toggle-password i:hover {
+    color: #0d6efd;
+}
+
+/* sambungkan border input */
+.input-group .form-control {
+    border-right: 1px solid #ced4da;
+}
+
+/* HILANGKAN bekas space input-group */
+.input-group > :not(:first-child) {
+    margin-left: 0;
+}
+
