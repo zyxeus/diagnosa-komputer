@@ -51,25 +51,31 @@
                     </div>
                 </div>
 
-                <div class="input-group">
-                    <input type="password"
-                           name="password"
-                           class="form-control"
-                           placeholder="Password Baru"
-                           required>
-                    <div class="input-group-text">
-                        <i class="fas fa-lock"></i>
+                <div class="input-group password-group">
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Password Baru"
+                        required
+                    >
+                    <div class="input-group-text toggle-password" onclick="togglePassword('password', 'eyeIcon1')">
+                        <i class="fas fa-eye" id="eyeIcon1"></i>
                     </div>
                 </div>
 
-                <div class="input-group">
-                    <input type="password"
-                           name="password_confirmation"
-                           class="form-control"
-                           placeholder="Konfirmasi Password"
-                           required>
-                    <div class="input-group-text">
-                        <i class="fas fa-lock"></i>
+                <div class="input-group password-group">
+                    <input
+                        type="password"
+                        name="password_confirmation"
+                        id="password_confirmation"
+                        class="form-control"
+                        placeholder="Konfirmasi Password"
+                        required
+                    >
+                    <div class="input-group-text toggle-password" onclick="togglePassword('password_confirmation', 'eyeIcon2')">
+                        <i class="fas fa-eye" id="eyeIcon2"></i>
                     </div>
                 </div>
 
@@ -82,5 +88,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    function togglePassword(inputId, iconId) {
+        const input = document.getElementById(inputId);
+        const icon = document.getElementById(iconId);
+
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+        } else {
+            input.type = 'password';
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+        }
+    }
+</script>
+
 </body>
 </html>
