@@ -239,6 +239,37 @@ form button:hover {
     }
 }
 
+.input-group-text.toggle-password {
+    background: transparent !important;
+    border: none !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    min-width: auto !important;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-group-text.toggle-password i {
+    color: #adb5bd !important; 
+    font-size: 16px;
+}
+
+.input-group-text.toggle-password i:hover {
+    color: #6c757d !important; 
+}
+
+.input-group .form-control {
+    border-right: 1px solid #ced4da;
+}
+
+.input-group > :not(:first-child) {
+    margin-left: 0;
+}
+
 
 
 
