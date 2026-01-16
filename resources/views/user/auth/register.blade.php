@@ -6,7 +6,7 @@
 <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.webp') }}">
 
 <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/user.css') }}" rel="stylesheet">
 </head>
 
 @extends('layouts.app')
@@ -32,8 +32,29 @@
 
             <input type="text" name="name" class="form-control mb-3" value="{{ old('name') }}" placeholder="Nama" required>
             <input type="email" name="email" class="form-control mb-3" value="{{ old('email') }}" placeholder="Email" required>
-            <input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
-            <input type="password" name="password_confirmation" class="form-control mb-3" placeholder="Ulangi Password" required>
+            <div class="mb-3 position-relative">
+                <input type="password"
+                    name="password"
+                    id="register_password"
+                    class="form-control"
+                    placeholder="Password"
+                    required>
+
+                <i class="fas fa-eye toggle-password"
+                onclick="toggleRegisterPassword('register_password', this)"></i>
+            </div>
+
+            <div class="mb-3 position-relative">
+                <input type="password"
+                    name="password_confirmation"
+                    id="register_password_confirm"
+                    class="form-control"
+                    placeholder="Ulangi Password"
+                    required>
+
+                <i class="fas fa-eye toggle-password"
+                onclick="toggleRegisterPassword('register_password_confirm', this)"></i>
+            </div>
 
             <button class="btn btn-success w-100">Daftar</button>
 
@@ -45,4 +66,21 @@
         </form>
     </div>
 </div>
+
+<script>
+    function toggleRegisterPassword(inputId, icon) {
+        const input = document.getElementById(inputId);
+
+        if (input.type === 'password') {
+            input.type = 'text';
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+        } else {
+            input.type = 'password';
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+        }
+    }
+</script>
+
 @endsection
