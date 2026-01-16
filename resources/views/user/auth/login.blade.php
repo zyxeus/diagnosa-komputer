@@ -45,18 +45,20 @@
                        required>
             </div>
 
-            <div class="mb-3 password-wrapper">
+            <div class="mb-3">
                 <label>Password</label>
 
-                <input type="password"
-                    name="password"
-                    id="user_password"
-                    class="form-control"
-                    required>
+                <div class="password-field">
+                    <input type="password"
+                        name="password"
+                        id="user_password"
+                        class="form-control"
+                        required>
 
-                <span class="password-toggle" onclick="toggleUserPassword()">
-                    <i class="fas fa-eye" id="userEyeIcon"></i>
-                </span>
+                    <span class="password-toggle" onclick="toggleUserPassword()">
+                        <i class="fas fa-eye" id="userEyeIcon"></i>
+                    </span>
+                </div>
             </div>
 
             <div class="text-end mb-3">

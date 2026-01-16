@@ -239,12 +239,12 @@ form button:hover {
     }
 }
 
-.password-wrapper {
+.password-field {
     position: relative;
 }
 
-.password-wrapper input {
-    padding-right: 44px; /* ruang cukup untuk icon */
+.password-field input {
+    padding-right: 42px; /* ruang ikon */
 }
 
 .password-toggle {
@@ -254,16 +254,16 @@ form button:hover {
     transform: translateY(-50%);
     cursor: pointer;
 
-    /* tampilan profesional */
-    color: #adb5bd;           /* abu-abu terang */
-    font-size: 18px;          /* proporsional dengan input */
-    line-height: 1;
+    /* WARNA SAMA DENGAN LOGIN ADMIN */
+    color: #6c757d;
+    font-size: 16px;
     z-index: 5;
 }
 
 .password-toggle:hover {
-    color: #6c757d;           /* sedikit lebih gelap saat hover */
+    color: #0d6efd;
 }
+
 
 
 
