@@ -254,12 +254,13 @@ form button:hover {
 }
 
 .input-group-text.toggle-password i {
-    color: #adb5bd !important; 
+    color: #a1abb4;   /* sama seperti admin */
     font-size: 16px;
+    padding-right: 12px;
 }
 
 .input-group-text.toggle-password i:hover {
-    color: #6c757d !important; 
+    color: #0d6efd;
 }
 
 .input-group .form-control {
