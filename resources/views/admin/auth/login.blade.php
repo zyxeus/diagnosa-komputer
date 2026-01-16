@@ -54,6 +54,8 @@
                             class="form-control"
                             placeholder="Password"
                             required
+                            pattern="[A-Za-z0-9]{6,12}"
+                            title="Password harus 6–12 karakter dan hanya huruf serta angka"
                         >
 
                         <div class="input-group-text toggle-password" onclick="togglePassword()">

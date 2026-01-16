@@ -16,7 +16,12 @@ class LoginController extends Controller
     {
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => [
+                'required',
+                'regex:/^[A-Za-z0-9]{6,12}$/'
+            ]
+        ], [
+            'password.regex' => 'Password harus 6–12 karakter dan hanya boleh huruf serta angka.'
         ]);
 
         $credentials = $request->only('email', 'password');
