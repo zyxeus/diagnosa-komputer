@@ -272,18 +272,20 @@ form button:hover {
 }
 
 .toggle-password {
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    transform: translateY(-50%);
+    position: relative;
+    float: right;
+    margin-top: -38px;   /* naik ke dalam field */
+    margin-right: 12px;
     cursor: pointer;
     color: #a1abb4;
     font-size: 16px;
+    z-index: 2;
 }
 
 .toggle-password:hover {
     color: #6c757d;
 }
+
 
 
 
