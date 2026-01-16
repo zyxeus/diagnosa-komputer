@@ -19,7 +19,18 @@ class ResetPasswordController extends Controller
         $request->validate([
             'token' => 'required',
             'email' => 'required|email|exists:users,email',
-            'password' => 'required|min:6|max:8|regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/|confirmed'
+            'password' => [
+                'required',
+                'confirmed',
+                'regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]{6,12}$/'
+            ],
+        ], [
+            'password.required' =>
+                'Password wajib diisi.',
+            'password.confirmed' =>
+                'Konfirmasi password tidak sama.',
+            'password.regex' =>
+                'Password harus 6–12 karakter, kombinasi huruf dan angka, tanpa spasi atau simbol.',
         ]);
 
         $status = Password::broker('users')->reset(

@@ -33,11 +33,11 @@ class ResetPasswordController extends Controller
             'password' => [
                 'required',
                 'confirmed',
-                'min:6',
-                'regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]+$/'
+                'regex:/^[A-Za-z0-9]{6,12}$/'
             ],
         ], [
-            'password.regex' => 'Password harus kombinasi huruf dan angka tanpa spasi atau simbol.'
+            'password.regex' =>
+                'Password harus 6–12 karakter, hanya huruf dan angka, tanpa spasi atau simbol.',
         ]);
 
         $status = Password::broker('admins')->reset(

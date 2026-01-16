@@ -57,19 +57,21 @@ class AuthController extends Controller
                 'required',
                 'regex:/^[A-Za-z ]+$/'
             ],
-            'email' => 'required|email|unique:users',
+            'email' => 'required|email|unique:users,email',
             'password' => [
                 'required',
-                'min:6',
-                'max:8',
-                'regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]+$/'
+                'confirmed',
+                'regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]{6,12}$/'
             ],
         ], [
-            'name.regex' => 'Nama hanya boleh berisi huruf dan spasi.',
-            'password.required' => 'Password wajib diisi.',
-            'password.min' => 'Password minimal 6 karakter.',
-            'password.max' => 'Password maksimal 8 karakter.',
-            'password.regex' => 'Password harus mengandung huruf dan angka dan tidak boleh mengandung spasi atau simbol.',
+            'name.regex' =>
+                'Nama hanya boleh berisi huruf dan spasi.',
+            'password.required' =>
+                'Password wajib diisi.',
+            'password.confirmed' =>
+                'Konfirmasi password tidak sama.',
+            'password.regex' =>
+                'Password harus 6–12 karakter, kombinasi huruf dan angka, tanpa spasi atau simbol.',
         ]);
 
         $user = User::create([

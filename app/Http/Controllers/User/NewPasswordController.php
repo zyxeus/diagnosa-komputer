@@ -28,11 +28,11 @@ class NewPasswordController extends Controller
                 'required',
                 'confirmed',
                 'min:6',
-                'max:8',
+                'max:12',
                 'regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]+$/'
             ],
         ], [
-            'password.regex' => 'Password harus mengandung huruf dan angka, tanpa spasi atau simbol.'
+            'password.regex' => 'Password harus 6–12 karakter, kombinasi huruf dan angka, tanpa spasi atau simbol.'
         ]);
 
         $status = Password::reset(

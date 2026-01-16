@@ -47,11 +47,11 @@ class ProfileController extends Controller
             'password' => [
                 'required',
                 'confirmed',
-                'regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z0-9]{6,8}$/'
+                'regex:/^[A-Za-z0-9]{6,12}$/'
             ],
         ], [
             'password.regex' =>
-                'Password harus 6–8 karakter, mengandung huruf dan angka, tanpa spasi atau simbol.',
+                'Password harus 6–12 karakter, mengandung huruf dan angka, tanpa spasi atau simbol.',
         ]);
 
         /** @var \App\Models\Admin $admin */

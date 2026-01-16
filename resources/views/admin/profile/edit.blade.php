@@ -79,15 +79,19 @@
                             <input type="password" name="current_password" class="form-control" required>
                         </div>
 
-                        <div class="form-group">
-                            <label>Password Baru</label>
-                            <input type="password" name="password" class="form-control" required>
-                        </div>
+                        <input type="password"
+                            name="password"
+                            class="form-control"
+                            required
+                            pattern="[A-Za-z0-9]{6,12}"
+                            title="Password harus 6–12 karakter dan hanya huruf serta angka">
 
-                        <div class="form-group">
-                            <label>Ulangi Password Baru</label>
-                            <input type="password" name="password_confirmation" class="form-control" required>
-                        </div>
+                        <input type="password"
+                            name="password_confirmation"
+                            class="form-control"
+                            required
+                            pattern="[A-Za-z0-9]{6,12}"
+                            title="Password harus 6–12 karakter dan hanya huruf serta angka">
 
                         <button class="btn btn-warning">
                             Update Password
