@@ -46,10 +46,25 @@
                         <div class="alert-error">{{ $message }}</div>
                     @enderror
 
-                    <div class="input-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password" required>
-                        <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                    <div class="input-group password-group">
+                        <div class="input-group-text">
+                            <i class="fas fa-lock"></i>
+                        </div>
+
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="form-control"
+                            placeholder="Password"
+                            required
+                        >
+
+                        <div class="input-group-text toggle-password" onclick="togglePassword()">
+                            <i class="fas fa-eye" id="eyeIcon"></i>
+                        </div>
                     </div>
+
                     @error('password')
                         <div class="alert-error">{{ $message }}</div>
                     @enderror
