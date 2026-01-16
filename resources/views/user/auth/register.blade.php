@@ -6,6 +6,7 @@
 <link rel="apple-touch-icon" href="{{ asset('assets/img/favicon.webp') }}">
 
 <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="{{ asset('assets/css/user.css') }}" rel="stylesheet">
 </head>
 
