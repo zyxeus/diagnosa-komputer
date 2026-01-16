@@ -239,59 +239,37 @@ form button:hover {
     }
 }
 
-.password-field {
-    position: relative;
-}
+/* ===============================
+   FIX FINAL ICON MATA PASSWORD
+   =============================== */
 
-.password-field input {
-    padding-right: 42px; /* ruang ikon */
-}
-
-.password-toggle {
-    position: absolute;
-    right: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-
-    /* WARNA SAMA DENGAN LOGIN ADMIN */
-    color: #6c757d;
-    font-size: 16px;
-    z-index: 5;
-}
-
-.password-toggle:hover {
-    color: #0d6efd;
-}
-
-/* === FIX ICON MATA DI DALAM FIELD PASSWORD === */
 .password-field {
     position: relative;
     width: 100%;
 }
 
-.password-field input {
-    height: 50px;
-    padding-right: 45px; /* ruang ikon */
+.password-field .form-control {
+    height: 48px;               /* SAMAKAN DENGAN INPUT EMAIL */
+    padding-right: 44px;        /* ruang ikon */
+    line-height: 48px;
 }
 
 .password-toggle {
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 14px;
     transform: translateY(-50%);
-    cursor: pointer;
 
-    /* WARNA SAMA DENGAN LOGIN ADMIN */
-    color: #6c757d;
+    cursor: pointer;
+    color: #6c757d;             /* WARNA LOGIN ADMIN */
     font-size: 16px;
 
-    z-index: 10;
-    pointer-events: auto;
+    z-index: 20;
 }
 
 .password-toggle:hover {
     color: #0d6efd;
 }
+
 
 
