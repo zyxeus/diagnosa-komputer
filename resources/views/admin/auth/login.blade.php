@@ -17,24 +17,6 @@
 </head>
 
 <body>
-    .password-group {
-    position: relative;
-}
-
-.password-group .toggle-password {
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #888;
-    font-size: 16px;
-}
-
-.password-group .toggle-password:hover {
-    color: #333;
-}
-
     <div class="login-box">
         <div class="card">
             <div class="card-header">
