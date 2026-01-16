@@ -55,9 +55,9 @@
                         class="form-control"
                         required>
 
-                    <span class="password-toggle" onclick="toggleUserPassword()">
-                        <i class="fas fa-eye" id="userEyeIcon"></i>
-                    </span>
+                    <i class="fas fa-eye password-toggle"
+                    id="userEyeIcon"
+                    onclick="toggleUserPassword()"></i>
                 </div>
             </div>
 
