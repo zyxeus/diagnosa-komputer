@@ -46,15 +46,10 @@
                         <div class="alert-error">{{ $message }}</div>
                     @enderror
 
-                    <div class="input-group password-group">
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                        
-                        <!-- Icon mata -->
-                        <span class="toggle-password" onclick="togglePassword()">
-                            <i class="fas fa-eye" id="eyeIcon"></i>
-                        </span>
+                    <div class="input-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        <div class="input-group-text"><i class="fas fa-lock"></i></div>
                     </div>
-
                     @error('password')
                         <div class="alert-error">{{ $message }}</div>
                     @enderror
@@ -70,22 +65,4 @@
         </div>
     </div>
 </body>
-
-<script>
-    function togglePassword() {
-        const passwordField = document.getElementById('password');
-        const eyeIcon = document.getElementById('eyeIcon');
-
-        if (passwordField.type === 'password') {
-            passwordField.type = 'text';
-            eyeIcon.classList.remove('fa-eye');
-            eyeIcon.classList.add('fa-eye-slash');
-        } else {
-            passwordField.type = 'password';
-            eyeIcon.classList.remove('fa-eye-slash');
-            eyeIcon.classList.add('fa-eye');
-        }
-    }
-</script>
-
 </html>
