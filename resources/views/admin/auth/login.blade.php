@@ -16,7 +16,8 @@
     <link href="{{ asset('assets/css/login.admin.css') }}" rel="stylesheet">
 </head>
 
-.password-group {
+<body>
+    .password-group {
     position: relative;
 }
 
@@ -34,7 +35,6 @@
     color: #333;
 }
 
-<body>
     <div class="login-box">
         <div class="card">
             <div class="card-header">
