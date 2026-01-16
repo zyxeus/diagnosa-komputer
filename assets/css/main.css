@@ -2717,3 +2717,34 @@ input[type="range"]::-moz-range-thumb {
     margin: 0 20px;
   }
 }
+
+/* ===============================
+   PASSWORD FIELD + ICON MATA
+   =============================== */
+
+.password-field {
+  position: relative;
+  width: 100%;
+}
+
+.password-field input.form-control {
+  height: 48px;                 /* samakan dengan input lain */
+  padding-right: 42px;          /* ruang icon mata */
+  line-height: 48px;
+}
+
+.password-field .password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+
+  cursor: pointer;
+  font-size: 16px;
+  color: #6c757d;               /* WARNA ICON LOGIN ADMIN */
+  z-index: 10;
+}
+
+.password-field .password-toggle:hover {
+  color: var(--accent-color);   /* biru tema */
+}
