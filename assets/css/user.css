@@ -239,6 +239,32 @@ form button:hover {
     }
 }
 
+.toggle-password {
+    background: transparent !important;
+    border: none !important;
+    padding-left: 0;
+    padding-right: 14px;
+    cursor: pointer;
+}
+
+.toggle-password i {
+    color: #6c757d; 
+    font-size: 16px;
+}
+
+.toggle-password i:hover {
+    color: #0d6efd;
+}
+
+.input-group > .form-control {
+    border-right: none;
+}
+
+.input-group > .toggle-password {
+    border-left: none;
+}
+
+
 
 
 
