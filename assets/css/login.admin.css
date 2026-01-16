@@ -168,24 +168,23 @@ button:hover {
     align-items: center;
 }
 
-/* input */
 .password-group input {
     flex: 1;
     border: none;
     padding: 10px;
     font-size: 14px;
     outline: none;
+    border-radius: 5px 0 0 5px;
 }
 
-/* icon kiri & kanan */
 .password-group .input-group-text {
     background: transparent;
-    border: none;
+    border-left: 1px solid #ced4da;
     padding: 10px 12px;
+    border-radius: 0 5px 5px 0;
     color: #6c757d;
 }
 
-/* khusus icon mata */
 .toggle-password {
     cursor: pointer;
 }
@@ -193,6 +192,7 @@ button:hover {
 .toggle-password:hover {
     color: #0d6efd;
 }
+
 
 
 

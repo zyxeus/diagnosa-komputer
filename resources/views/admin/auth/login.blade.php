@@ -47,10 +47,6 @@
                     @enderror
 
                     <div class="input-group password-group">
-                        <div class="input-group-text">
-                            <i class="fas fa-lock"></i>
-                        </div>
-
                         <input
                             type="password"
                             name="password"
