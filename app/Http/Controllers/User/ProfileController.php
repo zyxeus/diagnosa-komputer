@@ -132,7 +132,7 @@ class ProfileController extends Controller
     public function downloadPdf($riwayat_id)
     {
         $riwayat = Riwayat::where('riwayat_id', $riwayat_id)
-            ->where('user_id', Auth::id())
+            ->where('user_id', Auth::user_id())
             ->firstOrFail();
 
         $hasil = collect(json_decode($riwayat->hasil_diagnosa, true))
