@@ -239,6 +239,31 @@ form button:hover {
     }
 }
 
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    padding-right: 42px; /* ruang ikon */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    /* WARNA SAMA DENGAN LOGIN ADMIN */
+    color: #6c757d;
+    font-size: 16px;
+    z-index: 5;
+}
+
+.password-toggle:hover {
+    color: #0d6efd;
+}
+
 /* === FIX ICON MATA DI DALAM FIELD PASSWORD === */
 .password-field {
     position: relative;
@@ -268,8 +293,5 @@ form button:hover {
 .password-toggle:hover {
     color: #0d6efd;
 }
-
-
-
 
 
