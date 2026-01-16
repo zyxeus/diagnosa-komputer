@@ -239,11 +239,27 @@ form button:hover {
     }
 }
 
-.toggle-password {
-    cursor: pointer;
+.password-wrapper {
+    position: relative;
 }
 
-.toggle-password:hover {
+.password-wrapper input {
+    padding-right: 40px; /* ruang untuk icon mata */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #6c757d;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.password-toggle:hover {
     color: #0d6efd;
 }
+
 

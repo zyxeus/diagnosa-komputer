@@ -44,20 +44,18 @@
                        required>
             </div>
 
-            <div class="mb-3">
+            <div class="mb-3 password-wrapper">
                 <label>Password</label>
 
-                <div class="input-group">
-                    <input type="password"
-                        name="password"
-                        id="user_password"
-                        class="form-control"
-                        required>
+                <input type="password"
+                    name="password"
+                    id="user_password"
+                    class="form-control"
+                    required>
 
-                    <span class="input-group-text toggle-password" onclick="toggleUserPassword()">
-                        <i class="fas fa-eye" id="userEyeIcon"></i>
-                    </span>
-                </div>
+                <span class="password-toggle" onclick="toggleUserPassword()">
+                    <i class="fas fa-eye" id="userEyeIcon"></i>
+                </span>
             </div>
 
             <div class="text-end mb-3">
