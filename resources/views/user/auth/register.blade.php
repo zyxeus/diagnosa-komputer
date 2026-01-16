@@ -44,7 +44,7 @@
 
                     <span class="input-group-text toggle-password"
                         onclick="toggleRegisterPassword('register_password', this)">
-                        <i class="fas fa-eye"></i>
+                        <i class="fa-solid fa-eye"></i>
                     </span>
                 </div>
             </div>
@@ -60,7 +60,7 @@
 
                     <span class="input-group-text toggle-password"
                         onclick="toggleRegisterPassword('register_password_confirm', this)">
-                        <i class="fas fa-eye"></i>
+                        <i class="fa-solid fa-eye"></i>
                     </span>
                 </div>
             </div>
@@ -77,8 +77,9 @@
 </div>
 
 <script>
-    function toggleRegisterPassword(inputId, icon) {
+    function toggleRegisterPassword(inputId, el) {
         const input = document.getElementById(inputId);
+        const icon = el.querySelector('i');
 
         if (input.type === 'password') {
             input.type = 'text';
