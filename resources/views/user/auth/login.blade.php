@@ -46,10 +46,18 @@
 
             <div class="mb-3">
                 <label>Password</label>
-                <input type="password"
-                       name="password"
-                       class="form-control"
-                       required>
+
+                <div class="input-group">
+                    <input type="password"
+                        name="password"
+                        id="user_password"
+                        class="form-control"
+                        required>
+
+                    <span class="input-group-text toggle-password" onclick="toggleUserPassword()">
+                        <i class="fas fa-eye" id="userEyeIcon"></i>
+                    </span>
+                </div>
             </div>
 
             <div class="text-end mb-3">
@@ -68,4 +76,22 @@
         </form>
     </div>
 </div>
+
+<script>
+    function toggleUserPassword() {
+        const password = document.getElementById('user_password');
+        const icon = document.getElementById('userEyeIcon');
+
+        if (password.type === 'password') {
+            password.type = 'text';
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+        } else {
+            password.type = 'password';
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+        }
+    }
+</script>
+
 @endsection
